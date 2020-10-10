@@ -1,0 +1,11 @@
+{
+  "name": "mystery_of_the_yellow_room",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:nunez2020/themysteryoftheyellowroom.git",
+  "author": "nunez2020 <nunez.nunez21@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
