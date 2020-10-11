@@ -10,19 +10,15 @@ let userName = readlineSync.question('Welcome to Hotel Chateau! Could we have yo
 
  function start(userName){
     let plot = ["Be friends with the butler?", "Shoot the butler and take the diamond form the yellow room?"]
-    let index = readlineSync.keyInSelect(plot,"What do you do?");
+    let index = readlineSync.keyInSelect(plot,"What's next?");
         if (index == 0){
            console.log ( `${userName} , your are now freinds with the butler.`)
             playAgain(userName)
             }
         else if (index == 1){
               alarm(userName)
-            }
-            else {
-                console.log("Not valid answer, choose 0 or 1.")
-                return start()
             };
- }
+        }
 
     function alarm(userName) {
         let plotTwo = ["Alarm was tripped", "Owner of the Chateau heard a gunshot."]
@@ -41,7 +37,7 @@ let userName = readlineSync.question('Welcome to Hotel Chateau! Could we have yo
         let plotThree = ["Escape through the secret tunnel.", "Drive away in the Chateau's Rolls Royce."]
         let index = readlineSync.keyInSelect(plotThree,"What do you do?");
             if (index == 0) {
-                console.log (`${userName}you've escapaed the authorities unseen.You win!`)
+                console.log (`${userName} you've escapaed the authorities unseen.You win!`)
                 playAgain()
             }
             else if ( index == 1) { 
